@@ -65,7 +65,7 @@ const keyring = new Keyring();
 const ethereumAddress = "d43593c715fdd31c61141abd04a99fd6822c8558";
 const substratePublicKey = ethereumToSubstrate(hexToUint8Array(ethereumAddress));
 const ss58address = keyring.encodeAddress(substratePublicKey, 42);
-console.log(`Ethereum address: ${ethereumAddress} -> Substrate address: ${ss58address})`);
+console.log(`Ethereum address: ${ethereumAddress} -> Substrate address: ${ss58address}`);
 
 // Convert Substrate address to Ethereum address
 const substratePublicKey2 = keyring.decodeAddress(ss58address);
